@@ -1,17 +1,17 @@
-import { getData, dateArray, statusArray } from './api.js'
+import { getData2, dateArray2, statusArray2 } from './api2.js'
 
-async function getChart() {
-    await getData()
+async function getChart2() {
+    await getData2()
 
-    const chart = document.getElementById('covid');
+    const chart2 = document.getElementById('covid2');
 
-    const myChart = new Chart(chart, {
-        type: 'line',
+    const myChart = new Chart(chart2, {
+        type: 'bar',
         data: {
-            labels: dateArray,
+            labels: dateArray2,
             datasets: [{
                 label: 'Casos confirmados C-19 Chile',
-                data: statusArray,
+                data: statusArray2,
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -51,4 +51,4 @@ async function getChart() {
 };
 
 
-export { getChart }
+export { getChart2 }

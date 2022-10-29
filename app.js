@@ -1,1 +1,3 @@
-console.log('hola');
+import {getChart} from './chart.js'
+
+getChart()

@@ -1,145 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-
-
-:root {
-    --blanco: black;
-    --azul-opacidad: #00575e;
-    --bg-menu: #ffcb4c;
-    --bg-body: black;
-}
-
-
 * {
     margin: 0;
     padding: 0;
+    outline: none;
+    text-decoration: none;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--blanco);
+    background-color: #dfe9f5;
 }
 
-.menu-db {
-    max-width: 150px;
+.container {
+    display: flex;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    bottom: 0;
     height: 100vh;
-    background: var(--bg-menu);
-    padding: 20px;
-    transition: max-width .3s ease;
+    left: 0;
+    background-color: #fff;
+    width: 280px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
 
-.top-menu {
+.logo {
+    text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin: 10px 0 10px;
 }
 
-.top-menu {
-    display: flex;
-    align-items: center;
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
 }
 
+.logo span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
 
-.top-menu span {
+a {
+    position: relative;
+    color: rgba(85, 83, 83);
+    font-size: 14px;
+    display: table;
+    padding: 10px;
+}
+
+nav .fas {
+    position: relative;
+    width: 76px;
+    height: 40px;
+    top: 14px;
     font-size: 20px;
-    margin-left: 20px;
-    display: none;
+    text-align: center;
 }
 
-.top-menu .toggle {
-    width: 30px;
-    height: 20px;
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+a:hover {
+    background: #eee;
+}
+
+.logout {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Section */
+
+.main {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+}
+
+.main-top {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%;
+}
+
+.main-top i{
+    position: absolute;
+    right: 0;
+    margin: 10px 30px;
+    color: rgb(11, 109, 109);
     cursor: pointer;
 }
 
-.top-menu .toggle i {
-    font-size: 35px;
-}
-
-
-.input-search {
-    width: 100%;
-    margin: 50px 0;
-    background-color: var(--azul-opacidad);
-    padding: 15px;
-    border-radius: 8px;
+.main-data {
     display: flex;
-    align-items: center;
+    margin-top: 20px;
 }
 
-.input-search i {
-    font-size: 30px;
-    margin-right: 20px;
+.main-data .card {
+    width: 50%;
+    margin: 50px;
+    background: #fff;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
 
-.input-search .input {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    width: 100%;
-    height: 30px;
-    color: var(--blanco);
+.main-data .card h3 {
+    margin: 50px;
+    text-transform: capitalize;
+}
+
+.main-data .card canvas {
+    margin: 50px;
+    text-transform: capitalize;
+}
+
+.main-data .card i {
     font-size: 22px;
-    display: none;
+    padding: 10px;
 }
 
+/* Filtro fecha*/
 
-.menu .enlace {
-    width: 100%;
-    padding: 20px 0 20px 17px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    transition: all .3s ease;
-}
-
-.menu .enlace:hover {
-    background: var(--azul-opacidad);
-}
-
-.menu .enlace i {
-    margin-right: 20px;
-    font-size: 25px;
-}
-
-.menu .enlace span {
-    opacity: 0;
-    transition: opacity .3s ease;
-}
-
-.menu-db.open {
-    max-width: 300px;
-}
-
-.menu-db.open .top-menu span {
-    display: block;
-}
-
-.menu-db.open .input-search .menu-db.open .menu .enlace {
-    width: auto;
-}
-
-.menu-db.open .input-search .input {
-    display: block;
-}
-
-.menu-db.open .menu .enlace {
-    padding: 20px;
-}
-
-.menu-db.open .menu .enlace span {
-    opacity: 1;
-}
-
-.parrafo {
-    color: black;
-    background-color: black;
-    flex-direction: left;
-}
