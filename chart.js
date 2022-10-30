@@ -5,13 +5,16 @@ async function getChart() {
 
     const chart = document.getElementById('covid');
 
+    const codigoData = dateArray;
+    const dataPoints = statusArray;
+
     const myChart = new Chart(chart, {
         type: 'line',
         data: {
-            labels: dateArray,
+            labels: codigoData,
             datasets: [{
-                label: 'Casos confirmados C-19 Chile',
-                data: statusArray,
+                label: 'Casos confirmados de C-19 Chile',
+                data: dataPoints,
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -35,7 +38,7 @@ async function getChart() {
             plugins: {
                 title: {
                     display: true,
-                    text: 'Acumulado C-19',
+                    text: 'Acumulado C-19 Chile',
                     color: '#000',
                     padding: {
                         top: 10,

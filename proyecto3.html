@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <title>Prueba Proyecto 3</title>
+    <title>Proyecto 3</title>
 </head>
 <body>
 
@@ -15,7 +15,7 @@
         <nav>
             <ul>
                 <li><a href="#" class="logo">
-                    <img src="/logo.jpg" alt="">
+                    <img src="img/logo.jpg" alt="">
                     <span class="nav-item">Dashboard Covid</span>
                 </a></li>
                 <li><a href="#">
@@ -48,12 +48,11 @@
 
         <section class="main">
             <div class="main-top">
-                <h1>Data</h1>
+                <h1>Data: Análisis y tendencias del impacto del C-19 en Chile y Brazil</h1>  
                 <i class="fas fa-user-co"></i>
             </div>
 
-
-            <div class="date-style">
+            <!-- <div class="date-style">
                 <main class="col-4 ">
                     <form >
                         <div class= "row-3 ">
@@ -68,7 +67,7 @@
                                 <option value="active ">  Activos</option>
                             </select>
                         <div>
-                            <h3 class="mt-4 ">desde</h3>
+                            <h3>desde</h3>
                             <input type="date" class="mt-4" id="date" >
                             <h3 class="mt-4 px-3">hasta</h3>
                             <input type="date" class="mt-4" id="finalDate" onchange="datosXPais()"  >
@@ -77,15 +76,17 @@
                         </div>
                     </form>
                 </main>
-            </div>    
+            </div>     -->
             <div class="main-data">
                 <div class="card">
                     <i class="fas fa-chart-line"></i>
                     <canvas id="covid" width="400" height="400"></canvas>
+                    Start: <input type="date"> End: <input type="date"> 
                 </div>
                 <div class="card">
-                    <i class="fas fa-chart-bar"></i>
+                    <i class="fas fa-chart-line"></i>
                     <canvas id="covid2" width="400" height="400"></canvas>
+                   Start: <input type="date"> End: <input type="date"> 
                 </div>
             </div>
         </section>
