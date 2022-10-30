@@ -2,7 +2,7 @@ let statusArray2 = [];
 let dateArray2 = [];
 
 async function getData2() {
-    const urlApi2 = "https://api.covid19api.com/dayone/country/chile/status/confirmed"
+    const urlApi2 = "https://api.covid19api.com/dayone/country/brazil/status/confirmed"
 
     const res = await fetch(urlApi2);
 
