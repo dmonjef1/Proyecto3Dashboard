@@ -38,7 +38,7 @@ async function getChart() {
             plugins: {
                 title: {
                     display: true,
-                    text: 'Acumulado C-19',
+                    text: 'Acumulado C-19 Chile',
                     color: '#000',
                     padding: {
                         top: 10,
